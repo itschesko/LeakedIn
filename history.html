@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>File History</title>
+  <link rel="stylesheet" href="history.css" />
+</head>
+<body>
+  <div id="header">
+    <div class="logo-container">
+      <img src="leakedin.png" alt="LeakedIn" class="logo" />
+    </div>
+  <h1>Parsing History</h1>
+  <div class="controls">
+    <input type="text" id="searchInput" placeholder="Search keyword or company..." />
+    <button id="eraseAllBtn">Erase All History</button>
+  </div>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Postfix</th>
+          <th>Keyword</th>
+          <th>Companies</th>
+          <th>Employees</th>
+          <th>Date</th>          
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="historyTableBody">
+      </tbody>
+    </table>
+  </div>
+  <script src="history.js"></script>
+</body>
+</html>

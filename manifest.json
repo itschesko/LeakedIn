@@ -1,0 +1,3 @@
+{"manifest_version":3,"name":"LeakedIn Parser","version":"1.0","description":"Parse LinkedIn search results and download a file with the results","icons":{"128":"icon.png"},"permissions":["scripting","tabs","storage"],"host_permissions":["https://*.linkedin.com/*"],"content_scripts":[{"matches":["https://www.linkedin.com/search/results/people/*"],"js":["content.js"]}],"action":{"default_popup":"popup.html","default_title":"LeakedIn Parser"},"web_accessible_resources":[{"resources":["popup.html","history.html"],"matches":["<all_urls>"]}],"background":{"service_worker":"background.js"}}
+
+

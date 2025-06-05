@@ -1,0 +1,103 @@
+body {
+  font-family: "Inter", sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 2rem;
+  color: #111;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+#header {
+  flex: none;
+  padding: 8px;
+  box-sizing: border-box;
+  background: #f9f9f9;
+  z-index: 10;
+}
+
+.logo-container {
+  text-align: left;
+  margin-bottom: 6px;
+}
+
+.logo {
+  display: block;
+  max-width: 180px;
+  max-height: 100px;
+  padding-top: 10px;
+  object-fit: contain;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.controls input[type="text"] {
+  padding: 0.6rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.controls button {
+  padding: 0.6rem 1rem;
+  border: none;
+  background: #f2f0ff;
+  color: #6d28d9;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.table-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+  overflow: hidden;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+th, td {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+th {
+  background: #fafafa;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+td button {
+  margin-left: 0.5rem;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.85rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-download {
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+.btn-delete {
+  background: #fee2e2;
+  color: #dc2626;
+}

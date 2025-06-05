@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LeakedIn Parser</title>
+
+  
+  <link rel="stylesheet" href="third-party/jquery-ui.css" />
+  <link rel="stylesheet" href="third-party/jquery-ui.structure.css" />
+  <link rel="stylesheet" href="third-party/jquery-ui.theme.css" />
+
+  
+  <link rel="stylesheet" href="popup.css" />
+
+  
+  <script src="third-party/jquery-1.12.4.js"></script>
+  <script src="third-party/jquery-ui-1.12.1.js"></script>
+</head>
+<body>
+  
+  <div class="root-container">
+    
+    <div id="header">
+      <div class="logo-container">
+        <img src="leakedin.png" alt="LeakedIn" class="logo" />
+        <div class="logo-comment">
+          /* LeakedIn v1.0 */
+          /* <a href="https://github.com/itschesko/LeakedIn" target="_blank">Source Code &amp; Info</a> */<br>
+          /* @itschesko */<br>
+        </div>
+      </div>
+    </div>
+
+    
+    <div id="content">
+      
+      <div id="form-container">
+        
+        <div class="form-group">
+          <label for="search">Email Postfix:</label>
+          <input id="search" type="text" value="example.com" />
+        </div>
+
+        
+        <div class="form-group">
+          <label>Pages from</label>
+          <div class="inline-inputs">
+            <input id="fromNum" type="number" value="1" />
+            <span class="to-text">to</span>
+            <input id="toNum" type="number" value="1" />
+          </div>
+        </div>
+
+        
+        <div class="form-group">
+          <label for="delimiter">Delimiter</label>
+          <input id="delimiter" type="text" value="" />
+        </div>
+
+        
+        <div class="form-group" style="text-align:center; margin-bottom: 8px;">
+          <div id="email-preview-title" style="color:#888;font-size:13px;">Email preview:</div>
+          <div id="email-preview-value" style="color:#444;font-size:15px;margin-top:2px;">jsmith@example.com</div>
+        </div>
+
+        
+        <div class="form-group">
+          <button id="btn-parse" type="button">Parse</button>
+        </div>
+
+        
+        <div class="form-group">
+          <button id="btn-dn" type="button" hidden>Download</button>
+        </div>
+      </div>
+
+      
+      <div id="loading-container">
+        <div id="progress-bar-outer"><div id="progress-bar-inner"></div></div>
+        <div id="progress-text">LeakedIn is starting...</div>
+        <div id="people-count" class="people-count"></div>
+      </div>
+
+      
+      <div id="message-area" class="hidden"></div>
+      <div class="form-group" id="message-buttons" style="display:none;">
+        <button id="goto-linkedin" class="modern-btn">Go to LinkedIn Search</button>
+        <button id="btn-history-message" class="modern-btn">Parsing History</button>
+      </div>
+      <div id="active-reminder" class="hidden">Please keep this tab active while parsing.</div>
+      
+      <div class="form-group">
+        <button id="btn-history" type="button">Parsing History</button>
+      </div>
+      
+      <div id="history-container" class="hidden"></div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
